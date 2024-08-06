@@ -38,9 +38,9 @@ You are tasked with testing a search functionality that allows users to specify 
 
 | Boundary Values |
 |-----------------|
-|                 |
-|                 |
-|                 |
+|>0 AND <100      |
+|      99           |
+|       abc          |
 |                 |
 |                 |
 
@@ -51,10 +51,10 @@ You are tasked with testing a search functionality that allows users to specify 
 
 | Test Case | Input Value | Expected Result |
 |-----------|-------------|-----------------|
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
+|       1    |    1       |       ✅        |
+|        2   |     99     |      ✅         |
+|       3    |      abc   |"Please insert a number, bigger than 0"|
+|      0     |             |"Please insert a number, bigger than 0"|
 |           |             |                 |
 
 ### Task 3: Discuss and Share
